@@ -1,0 +1,11 @@
+/* src/components/ProjectItem.css */
+.project-item {
+    text-align: start;
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

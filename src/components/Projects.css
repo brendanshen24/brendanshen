@@ -1,0 +1,81 @@
+.project {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 255, 0.29);
+    background-color: #000;
+    transition: transform 0.3s ease-in-out;
+    width: 290px; /* Set fixed width */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.project img {
+    width: 100%;
+    height: 220px; /* Set fixed height for the image */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.project-content {
+    height: calc(100% - 220px); /* Set height for the text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.project p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #ddd;
+    text-align: left;
+}
+
+
+.about-brendan {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-brendan-text {
+    color: #fff;
+    width: 100%; /* Set width to 100% to match other boxes */
+}
+
+.about-brendan h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about-brendan p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
